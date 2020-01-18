@@ -18,7 +18,7 @@ document.getElementById("submitguess").onclick = function(){
             }
             if (dao == 2){
                 daolaw = y;
-            }else{
+            }else{ 
                 daolaw += ", "+y;
             }
             document.querySelector('.history').textContent = daolaw;
@@ -27,6 +27,7 @@ document.getElementById("submitguess").onclick = function(){
             document.querySelector('.result').textContent = "You Lost!!! THE NUMBER IS "+ x + ".";
         }
 }
+
 document.getElementById("submitguess").onkey13 = function(){
     var y = document.getElementById("guessField").value;
         if(dao < 11){
